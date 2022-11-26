@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Maker</title>
+    <style>
+      .header {
+        text-align: center;
+        background-color: pink;
+      }
+      img {
+        width: 140px;
+        height: 140px;
+        margin: 5px;
+      }
+      label {
+        display: block;
+      }
+      .cards {
+        margin: auto;
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+      }
+      .message-title {
+        font-size: 20pt;
+        color: blueviolet;
+      }
+      .message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Generate Get Well Soon Card</h1>
+    </div>
+    <div class="cards" onclick="colorBorder()">
+      <div class="card">
+        <label for="one"><img src="images/gws.jpg" alt="gws.jpg" /></label
+        ><br />
+        <input type="radio" id="one" name="card" value="1" /><br />
+      </div>
+      <div class="card">
+        <label for="two"><img src="images/gws2.jpg" alt="gws2.jpg" /></label
+        ><br />
+        <input type="radio" id="two" name="card" value="2" /><br />
+      </div>
+      <div class="card">
+        <label for="three"><img src="images/gws3.jpg" alt="gws3.jpg" /></label
+        ><br />
+        <input type="radio" id="three" name="card" value="3" /><br />
+      </div>
+      <div class="card">
+        <label for="four"><img src="images/gwsf.jpg" alt="gwsf.jpg" /></label
+        ><br />
+        <input type="radio" id="four" name="card" value="4" /><br />
+      </div>
+      <div class="card">
+        <label for="five"><img src="images/gwsf2.png" alt="gwsf2.png" /></label
+        ><br />
+        <input type="radio" id="five" name="card" value="5" /><br />
+      </div>
+      <div class="card">
+        <label for="six"><img src="images/gwsf3.jpg" alt="gwsf3.jpg" /></label
+        ><br />
+        <input type="radio" id="six" name="card" value="6" /><br />
+      </div>
+    </div>
+    <div class="message">
+      <div class="message-title">Personal Message</div>
+      <textarea
+        id="message"
+        name="message"
+        rows="10"
+        cols="50"
+        style="resize: none"
+      ></textarea>
+      <input type="button" id="generate" value="Generate" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

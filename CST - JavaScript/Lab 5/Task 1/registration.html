@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Registeration</title>
+</head>
+<body>
+    <div>
+        <label for="name"><b>Enter your name: </b></label>
+        <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+        <label for="age"><b>Enter your age: </b></label>
+        <input type="number" id="age" name="age">
+    </div>
+
+    <label for="gender"><b>Select your Gender: </b></label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female"><img src="images/female.jpeg" alt="female symbol"></label>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male"><img src="images/male.jpeg" alt="male symbol"></label><br>
+
+    <label for="color"><b>Select your favorite color: </b></label>
+    <select name="color" id="color">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select>
+    <br>
+
+    <input type="button" value="Register" id="register-button">
+
+    <script src="library.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

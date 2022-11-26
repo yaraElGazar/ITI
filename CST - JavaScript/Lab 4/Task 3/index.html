@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Task 3</title>
+</head>
+<body>
+    <img src="images/marble1.jpg" alt="marbel ball" onmouseover="stop()" onmouseout="moveBall()">
+    <img src="images/marble1.jpg" alt="marbel ball" onmouseover="stop()" onmouseout="moveBall()">
+    <img src="images/marble1.jpg" alt="marbel ball" onmouseover="stop()" onmouseout="moveBall()">
+    <img src="images/marble1.jpg" alt="marbel ball" onmouseover="stop()" onmouseout="moveBall()">
+    <img src="images/marble1.jpg" alt="marbel ball" onmouseover="stop()" onmouseout="moveBall()">
+
+    <script>
+        let i = -1;
+        let myImages = document.images;
+        let myInterval;
+        
+        function moveBall() {
+        myInterval = setInterval(function() {
+            if (i < 4) {
+           setTimeout(function(){
+            myImages[i].src = "images/marble3.jpg";
+           }, 500);
+           setTimeout(function(){
+            myImages[i].src = "images/marble1.jpg";
+           }, 1000);
+
+           i++;
+        }else if(i===4) {
+            i=-1;
+        }
+            }, 2000);
+        }
+
+        function stop() {
+            clearInterval(myInterval);
+        }
+
+        moveBall();
+    </script>
+
+
+</body>
+</html>

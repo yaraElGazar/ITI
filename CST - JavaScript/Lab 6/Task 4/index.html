@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 6 - Task 4</title>
+    <style>
+      .container {
+        height: 500px;
+        width: 500px;
+        border: solid red;
+      }
+      #one,
+      #two,
+      #top {
+        position: absolute;
+      }
+      #one {
+        top: 250px;
+        left: 15px;
+      }
+      #two {
+        top: 250px;
+        left: 460px;
+      }
+      #top {
+        top: 480px;
+        left: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/icon1.gif" id="one" alt="" />
+      <img src="images/icon2.gif" id="two" alt="" />
+      <img src="images/TOP.JPG" id="top" alt="" />
+    </div>
+    <input type="button" value="go" id="move" />
+    <input type="button" value="reset" id="reset" />
+
+    <p id="first"></p>
+    <p id="second"></p>
+    <script src="main.js"></script>
+  </body>
+</html>

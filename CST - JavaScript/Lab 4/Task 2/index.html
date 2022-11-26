@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Task 2</title>
+</head>
+<body>
+   <h1>Showing Pics</h1>
+   <hr>
+<input type="button" value="Next" onClick="Next()">
+<input type="button" value="SlideShow" onClick="SlideShow()">
+<input type="button" value="Stop" onclick="Stop()">
+<input type="button" value="Previous" onClick="Prev()">
+<center><div><img src="images/1.jpg" alt="girl photo"></div></center>
+
+   <script>
+    let image = document.querySelector("img");
+    let imageNumber = image.src.substring(7, 8);
+    let myInterval;
+
+        function Next() {
+            if(imageNumber != 6) {
+                imageNumber++;
+                image.src = "images/"+imageNumber+".jpg";
+            }
+        }
+
+        function Prev() {
+            if(imageNumber != 1) {
+                imageNumber--;
+                image.src = "images/"+imageNumber+".jpg";
+            }
+        }
+
+        function Slide() {
+            if(imageNumber != 6) {
+                imageNumber++;
+                image.src = "images/"+imageNumber+".jpg";
+            }else{
+                image.src = "images/1.jpg"; 
+                imageNumber = 1;
+            }
+        }
+
+        function SlideShow() {
+            myInterval = setInterval(Slide, 2000);
+        }
+
+        function Stop() {
+            clearInterval(myInterval);
+        }
+
+   </script>
+
+</body>
+</html>
