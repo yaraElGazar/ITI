@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page3</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form action="./page1.html">
+        <fieldset>
+          <legend>Log In</legend>
+          <div>
+            <label for="name">User Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your User Name here"
+            />
+          </div>
+          <div>
+            <label for="password">PassWord: </label>
+            <input type="password" id="password" />
+          </div>
+          <div>
+            <label for="location">Select your location: </label>
+            <select name="location" id="location">
+              <optgroup label="Africa">
+                <option value="Egypt">Egypt</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Namibia">Namibia</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Russia">Russia</option>
+                <option value="UK">UK</option>
+              </optgroup>
+              <optgroup label="North America" disabled>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+                <option value="USA">USA</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              accesskey="m"
+            />
+            <label for="remember">Remember<u>Me</u> (alt + m) </label>
+          </div>
+          <div>
+            <input type="submit" name="login" id="login" value="Login" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

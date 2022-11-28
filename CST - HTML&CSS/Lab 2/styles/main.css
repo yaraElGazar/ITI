@@ -1,0 +1,76 @@
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  font-size: 150%;
+}
+
+table {
+  box-shadow: 5px 5px 5px rgb(88, 86, 88);
+}
+
+.welcome {
+  position: absolute;
+  right: 0;
+  color: rgb(161, 35, 155);
+  font-size: 20px;
+}
+
+.enter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gender {
+  font-weight: bold;
+  text-align: center;
+}
+
+.interests {
+  font-size: 20pt;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+legend {
+  font-size: 30pt;
+  color: rgb(96, 26, 160);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* .diff-font {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.right {
+  float: right;
+}
+
+.end {
+  margin-top: 10px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+} */

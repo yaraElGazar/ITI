@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page2</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <div class="center">
+      <table border="1px" bordercolor="white" cellpadding="10" cellspacing="5">
+        <form action="./page3.html">
+          <tr>
+            <td><label for="firstName">First Name</label></td>
+            <td>
+              <input type="text" id="firstName" name="firstName" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastName">Last Name</label></td>
+            <td>
+              <input type="text" id="lastName" name="lastName" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password" required /></td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="gender">
+              <label>Gender</label>
+            </td>
+            <td>
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Male</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="birthday">Birthday: </label>
+              <select name="month" id="birthday">
+                <option value="" disabled hidden selected>
+                  [ Select a Month ]
+                </option>
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="Jun">June</option>
+                <option value="Jul">July</option>
+                <option value="Aug">August</option>
+                <option value="Sep">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+              </select>
+            </td>
+            <td>
+              <input
+                type="number"
+                name="bday"
+                placeholder="dd"
+                min="1"
+                max="31"
+              />
+              <input
+                type="number"
+                name="byear"
+                placeholder="yyyy"
+                min="1900"
+                max="2022"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="interests">Interests</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="sports" name="sports" /><label
+                for="sports"
+                >Sports</label
+              >
+            </td>
+            <td>
+              <input type="checkbox" id="music" name="music" /><label
+                for="music"
+                >Music</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="books" name="books" /><label
+                for="books"
+                >Books</label
+              >
+            </td>
+            <td>
+              <input type="checkbox" id="computer" name="computer" /><label
+                for="computer"
+                >Computer stuff</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="fashion" name="fashion" /><label
+                for="fashion"
+                >Fashion</label
+              >
+            </td>
+            <td>
+              <input type="checkbox" id="movies" name="movies" /><label
+                for="movies"
+                >Movies</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="submit"><input type="submit" value="Submit" /></div>
+            </td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </body>
+</html>
