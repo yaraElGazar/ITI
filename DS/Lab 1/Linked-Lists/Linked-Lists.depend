@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1670397487 source:c:\users\yara\desktop\iti\ds\day 1\lab 1\linked-lists\main.cpp
+	<iostream>
+	<LinkedList.h>
+
+1670397755 c:\users\yara\desktop\iti\ds\day 1\lab 1\linked-lists\include\linkedlist.h
+	<iostream>
+	<Node.h>
+
+1670359363 c:\users\yara\desktop\iti\ds\day 1\lab 1\linked-lists\include\node.h
+

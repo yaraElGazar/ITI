@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1670479028 source:c:\users\yara\desktop\iti\ds\day 2\queue\queue-circular-array\main.cpp
+	<iostream>
+	<Queue.h>
+
+1670478808 c:\users\yara\desktop\iti\ds\day 2\queue\queue-circular-array\include\queue.h
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1670474899 source:c:\users\yara\desktop\iti\ds\day 2\queue\queue-nodes\main.cpp
+	<iostream>
+	<Queue.h>
+
+1670475710 c:\users\yara\desktop\iti\ds\day 2\queue\queue-nodes\include\queue.h
+	<Node.h>
+
+1670442765 c:\users\yara\desktop\iti\ds\day 2\queue\queue-nodes\include\node.h
+

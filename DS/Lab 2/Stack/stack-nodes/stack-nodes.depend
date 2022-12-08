@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1670442616 source:c:\users\yara\desktop\iti\ds\day 2\stack\stack-nodes\main.cpp
+	<iostream>
+	<Stack.h>
+
+1670443606 c:\users\yara\desktop\iti\ds\day 2\stack\stack-nodes\include\stack.h
+	<Node.h>
+
+1670440373 c:\users\yara\desktop\iti\ds\day 2\stack\stack-nodes\include\node.h
+
