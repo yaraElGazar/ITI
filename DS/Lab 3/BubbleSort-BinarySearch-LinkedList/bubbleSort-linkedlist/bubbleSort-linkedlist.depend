@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1670541867 source:c:\users\yara\desktop\iti\ds\day 3\lab 3\bubblesort-linkedlist\main.cpp
+	<iostream>
+	<LinkedList.h>
+
+1670542486 c:\users\yara\desktop\iti\ds\day 3\lab 3\bubblesort-linkedlist\include\linkedlist.h
+	<iostream>
+	<Node.h>
+
+1670540087 c:\users\yara\desktop\iti\ds\day 3\lab 3\bubblesort-linkedlist\include\node.h
+
+1670543911 source:c:\users\yara\desktop\iti\ds\day 3\lab 3\bubblesort-binarysearch-linkedlist\bubblesort-linkedlist\main.cpp
+	<iostream>
+	<LinkedList.h>
+
+1670543585 c:\users\yara\desktop\iti\ds\day 3\lab 3\bubblesort-binarysearch-linkedlist\bubblesort-linkedlist\include\linkedlist.h
+	<iostream>
+	<Node.h>
+
+1670540087 c:\users\yara\desktop\iti\ds\day 3\lab 3\bubblesort-binarysearch-linkedlist\bubblesort-linkedlist\include\node.h
+
