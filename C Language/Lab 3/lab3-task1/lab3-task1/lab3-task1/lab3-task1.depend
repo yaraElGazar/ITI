@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1666703746 source:c:\users\hp\desktop\lab3-task1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1666703748 source:c:\users\yara\desktop\lab3-task1\lab3-task1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1666786084 source:c:\users\yara\desktop\lab3-task1\lab3-task1\lab3-task1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1666786084 source:c:\users\yara\desktop\iti\c\day 3\lab3-task1\lab3-task1\lab3-task1\main.c
+	<stdio.h>
+	<stdlib.h>
+

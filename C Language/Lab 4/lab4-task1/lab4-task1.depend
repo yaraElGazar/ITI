@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1666787774 source:c:\users\yara\desktop\lab4-task1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1666788605 source:c:\users\yara\desktop\iti\c\day 4\lab4-task1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+

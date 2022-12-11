@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666785882 source:c:\users\yara\desktop\lab3-task6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1667579813 source:c:\users\yara\desktop\iti\c\day 7\lab7-task4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<conio.h>
+
+1667580324 source:c:\users\yara\desktop\iti\c\day 7\lab 7\lab7-task4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<conio.h>
+

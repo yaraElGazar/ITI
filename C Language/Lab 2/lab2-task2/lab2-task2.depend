@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666617698 source:c:\users\hp\desktop\lab2-task2\main.c
+	<stdio.h>
+	<stdlib.h>
+

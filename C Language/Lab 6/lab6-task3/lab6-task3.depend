@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1667581050 source:c:\users\yara\desktop\iti\c\day 6\lab6-task3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<conio.h>
+
