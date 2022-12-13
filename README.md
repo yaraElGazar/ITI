@@ -4,8 +4,9 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 
 ## Courses included:
 
-1. ✅ C Language
-2. ✅ Client Side Technologies (HTML & CSS)
-3. ✅ Client Side Technologies (JavaScript)
-4. ✅ Data Structures and Algorithms
-5. ✅ XML
+1. ✅ Advanced JS
+2. ✅ C Language
+3. ✅ Client Side Technologies (HTML & CSS)
+4. ✅ Client Side Technologies (JavaScript)
+5. ✅ Data Structures and Algorithms
+6. ✅ XML
