@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1</title>
+    <script src="../Libraries/jqueryDevMin.js"></script>
+    <script src="../Scripts/script.js"></script>
+    <link rel="stylesheet" href="../Styles/style.css" />
+  </head>
+  <body>
+    <div class="buttons">
+      <div class="button" id="btn1">About</div>
+      <div class="button" id="btn2">Gallery</div>
+      <div class="button" id="btn3">Services</div>
+      <div class="button" id="btn4">Complain</div>
+    </div>
+    <div class="card" id="about">
+      <div id="story">Story About Snow Man</div>
+    </div>
+    <div class="card" id="gallery">
+      <img src="../Images/left.png" alt="left arrow" class="arrow" id="left" />
+      <img src="../Images/1.jpg" alt="snowman picture" id="picture" />
+      <img
+        src="../Images/right.png"
+        alt="right arrow"
+        class="arrow"
+        id="right"
+      />
+    </div>
+    <div id="services">
+      <ul>
+        <li>item #1</li>
+        <li>item #2</li>
+        <li>item #3</li>
+      </ul>
+    </div>
+    <div class="card" id="complain">
+      <div>
+        <lable>Name: </lable>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <lable>Email: </lable>
+        <input type="text" id="email" />
+      </div>
+      <div>
+        <lable>Phone: </lable>
+        <input type="text" id="phone" />
+      </div>
+      <div>
+        <div>Complain</div>
+        <textarea
+          name="complain-area"
+          id="complain-area"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div><input type="button" value="send" id="sendBtn" /></div>
+    </div>
+    <div class="card" id="complain-answers">
+      <div>
+        Your complain is
+        <div id="complain2"></div>
+      </div>
+      <div>
+        <div>
+          Your name is
+          <div id="name2"></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          Your email is
+          <div id="email2"></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          Your phone is
+          <div id="phone2"></div>
+        </div>
+      </div>
+      <div><input type="button" value="Back to edit" id="backbtn" /></div>
+    </div>
+  </body>
+</html>
