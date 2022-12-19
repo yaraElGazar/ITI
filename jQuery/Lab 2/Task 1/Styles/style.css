@@ -1,0 +1,11 @@
+#car {
+    position: absolute;
+    top: 50px;
+}
+
+#element {
+    color: blue;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
