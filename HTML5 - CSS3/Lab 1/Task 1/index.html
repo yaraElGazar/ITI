@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 - Task 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video
+      src="videos/frozen.mp4"
+      width="1000px"
+      id="frozen-video"
+      poster="videos/frozen_img2.jfif"
+    ></video>
+    <input type="range" min="0" max="110" value="0" id="time" />
+    <span id="timeSpan">0:00/0:00</span>
+    <div id="buttons">
+      <input type="button" value="Play" id="play" />
+      <input type="button" value="Stop" id="stop" />
+      <input type="button" value="<<" id="start" />
+      <input type="button" value="<" id="backward" />
+      <input type="button" value=">" id="forward" />
+      <input type="button" value=">>" id="end" />
+      <input type="range" min="0" max="1" value="0.5" id="sound" step="0.1" />
+      <input type="button" value="Mute" id="mute" />
+      <br />
+      <span>Speed</span>
+      <input type="range" min="0" max="1" step="0.1" value="0.5" id="speed" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
