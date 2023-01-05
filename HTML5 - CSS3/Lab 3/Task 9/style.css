@@ -1,0 +1,26 @@
+/* #circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 40px;
+} */
+
+#pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  /* transition: all 0.1s; */
+}
+
+#pacman:hover {
+  border-top-right-radius: 61px;
+  border-bottom-left-radius: 61px;
+}

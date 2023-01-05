@@ -1,0 +1,26 @@
+@keyframes pulse {
+  from {
+    box-shadow: 0px;
+  }
+  to {
+    box-shadow: 2px 2px 30px 10px rgb(213, 107, 124);
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  border: 1px solid rgb(50, 50, 227);
+  background-color: rgb(147, 147, 242);
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-color: pink;
+  cursor: pointer;
+  animation: pulse 0.7s infinite alternate;
+}

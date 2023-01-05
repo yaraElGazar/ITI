@@ -1,0 +1,29 @@
+div {
+    margin-bottom: 10px;
+}
+
+#name:invalid {
+border: solid red;
+}
+
+
+
+#email:invalid {
+    border: solid red;
+}
+
+#email:invalid + span{
+    display: block;
+}
+
+#name:invalid + span{
+    display: block;
+
+}
+
+span {
+    display: none;
+    color: grey;
+    font-size: small;
+}
+
