@@ -10,5 +10,6 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 4. ✅ Client Side Technologies (HTML5 & CSS3)
 5. ✅ Client Side Technologies (JavaScript)
 6. ✅ Data Structures and Algorithms
-7. ✅ XML
-8. ✅ jQuery
+7. ✅ Responsive (Bootstrap)
+8. ✅ XML
+9. ✅ jQuery
