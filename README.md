@@ -6,10 +6,11 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 
 1. ✅ Advanced JS
 2. ✅ C Language
-3. ✅ Client Side Technologies (HTML & CSS)
-4. ✅ Client Side Technologies (HTML5 & CSS3)
-5. ✅ Client Side Technologies (JavaScript)
-6. ✅ Data Structures and Algorithms
-7. ✅ Responsive (Bootstrap)
-8. ✅ XML
-9. ✅ jQuery
+3. ✅ C++ (OOP)
+4. ✅ Client Side Technologies (HTML & CSS)
+5. ✅ Client Side Technologies (HTML5 & CSS3)
+6. ✅ Client Side Technologies (JavaScript)
+7. ✅ Data Structures and Algorithms
+8. ✅ Responsive (Bootstrap)
+9. ✅ XML
+10. ✅ jQuery
