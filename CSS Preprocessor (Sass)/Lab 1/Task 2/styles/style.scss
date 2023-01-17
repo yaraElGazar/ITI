@@ -1,0 +1,58 @@
+@import "./gridCreator";
+@import "./colors";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+@include gridCreator(12, "", 0px);
+@include gridCreator(12, "sm", 576px);
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+form {
+  font-family: "Libre Baskerville", serif;
+  border: solid $primary;
+  border-radius: 20px;
+  background-color: $light;
+  margin: 5% auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  h1 {
+    color: $primary;
+  }
+
+  label {
+    display: block;
+    color: $secondary;
+    margin: 5px;
+  }
+
+  .div-input {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    input {
+      border-radius: 5px;
+      padding: 5px;
+      border: solid 1px $primary;
+    }
+  }
+
+  button {
+    margin-top: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 2px $primary;
+    font-family: "Libre Baskerville", serif;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

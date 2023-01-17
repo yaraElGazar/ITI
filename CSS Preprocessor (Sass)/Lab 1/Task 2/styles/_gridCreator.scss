@@ -1,0 +1,19 @@
+@mixin gridCreator($columns: 12, $screen: "", $breakpoint: 0px) {
+  @if ($screen == "") {
+    @media all and (min-width: $breakpoint) {
+      @for $i from 1 through $columns {
+        .col-#{$i} {
+          width: 100/ ($columns/$i) * 1%;
+        }
+      }
+    }
+  } @else {
+    @media all and (min-width: $breakpoint) {
+      @for $i from 1 through $columns {
+        .col-#{$screen}-#{$i} {
+          width: 100/ ($columns/$i) * 1%;
+        }
+      }
+    }
+  }
+}
