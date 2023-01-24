@@ -15,3 +15,4 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 9. ✅ Responsive (Bootstrap)
 10. ✅ XML
 11. ✅ jQuery
+12. ✅ JavaScript ES6
