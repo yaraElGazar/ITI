@@ -16,3 +16,5 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 10. ✅ XML
 11. ✅ jQuery
 12. ✅ JavaScript ES6
+13. ✅ PWA (Progressive Web Apps)
+14. ✅ NoSQL (MongoDB)
