@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat app using Socket IO and Node JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="chat_window">
+      <div class="top_menu">
+        <div class="buttons">
+          <div class="button close"></div>
+          <div class="button minimize"></div>
+          <div class="button maximize"></div>
+        </div>
+        <div class="title">Chat</div>
+      </div>
+      <ul class="messages" id="messageArea"></ul>
+
+      <form id="form">
+        <div class="bottom_wrapper clearfix">
+          <div class="message_input_wrapper">
+            <input
+              class="message_input"
+              id="form4Example1"
+              placeholder="Type your name"
+            />
+          </div>
+          <div class="message_input_wrapper">
+            <input
+              class="message_input"
+              id="form4Example3"
+              placeholder="Type your message here..."
+            />
+          </div>
+          <button class="send_message" type="submit">
+            <div class="icon"></div>
+            <div class="text">Send</div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    let socket = io();
+    let form = document.getElementById("form");
+    let myname = document.getElementById("form4Example1");
+    let message = document.getElementById("form4Example3");
+    let messageArea = document.getElementById("messageArea");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      if (message.value) {
+        // Send name and message from client to server
+        socket.emit("send name", myname.value);
+        socket.emit("send message", message.value);
+        message.value = "";
+      }
+    });
+    let name;
+    // Listen to send name event
+    socket.on("send name", (username) => {
+      name = document.createElement("p");
+      name.classList.add("name");
+      name.textContent = username;
+      messageArea.appendChild(name);
+    });
+
+    // Listen to send message event
+    socket.on("send message", (chat) => {
+      let chatContent = document.createElement("p");
+      console.log(myname.value);
+      console.log(name.textContent);
+      if (myname.value === name.textContent) {
+        chatContent.classList.add("message-text-sender");
+      } else {
+        chatContent.classList.add("message-text");
+      }
+      chatContent.textContent = chat;
+      messageArea.appendChild(chatContent);
+    });
+  </script>
+</html>

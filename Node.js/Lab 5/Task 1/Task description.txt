@@ -1,0 +1,8 @@
+Create api with 2 endpoints:
+1- products [name, quantity, description, price]
+2- customers [name, age, email, address]
+
+Models [MongoDB]
+Controllers [CRUD]
+Routes
+Validation
