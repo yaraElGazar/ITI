@@ -20,3 +20,4 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 14. ✅ NoSQL (MongoDB)
 15. ✅ Design Patterns (JS)
 16. ✅ Node.js
+17. ✅ Angular
