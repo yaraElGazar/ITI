@@ -1,0 +1,16 @@
+<div class="container col-4 mx-auto my-2">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

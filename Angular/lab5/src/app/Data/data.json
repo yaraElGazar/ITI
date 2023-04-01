@@ -1,0 +1,49 @@
+{
+  "Employees": [
+    {
+      "name": "Yara",
+      "age": "23",
+      "email": "yara@email.com",
+      "address": "Cairo",
+      "phone": "0100000000",
+      "salary": "20000",
+      "id": 1
+    },
+    {
+      "name": "Hamada",
+      "age": "44",
+      "email": "hamada@gmail.com",
+      "address": "Alex",
+      "phone": "0100000000",
+      "salary": "10000",
+      "id": 2
+    },
+    {
+      "name": "Ali",
+      "age": "19",
+      "email": "ali@gmail.com",
+      "address": "Mansoura",
+      "phone": "0100000000",
+      "salary": "1000",
+      "id": 3
+    },
+    {
+      "name": "Salma",
+      "age": "24",
+      "email": "salma@email.com",
+      "address": "Cairo",
+      "phone": "0100000000",
+      "salary": "20000",
+      "id": 4
+    },
+    {
+      "name": "Samia",
+      "age": "22",
+      "email": "samia@email.com",
+      "address": "Alex",
+      "phone": "01000000",
+      "salary": "5000",
+      "id": 5
+    }
+  ]
+}

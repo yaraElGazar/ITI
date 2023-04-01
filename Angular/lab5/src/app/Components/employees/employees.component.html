@@ -1,0 +1,42 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Salary</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="Employees; else falseBlock">
+    <tr *ngFor="let employee of Employees">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.age }}</td>
+      <td>{{ employee.address }}</td>
+      <td>{{ employee.phone }}</td>
+      <td>{{ employee.email }}</td>
+      <td>{{ employee.salary }}</td>
+      <td>
+        <a
+          class="btn btn-outline-success"
+          routerLink="/update/{{ employee.id }}"
+          >Update</a
+        >
+      </td>
+      <td>
+        <a
+          class="btn btn-outline-danger"
+          routerLink="/delete/{{ employee.id }}"
+          (click)="delete(employee.id)"
+          >Delete</a
+        >
+      </td>
+    </tr>
+  </tbody>
+  <ng-template #falseBlock>
+    <h3>Loading ...</h3>
+  </ng-template>
+</table>

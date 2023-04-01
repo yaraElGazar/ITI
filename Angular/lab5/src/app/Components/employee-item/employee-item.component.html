@@ -1,0 +1,19 @@
+<tr>
+  <td>{{ employee.id }}</td>
+  <td>{{ employee.name }}</td>
+  <td>{{ employee.age }}</td>
+  <td>{{ employee.address }}</td>
+  <td>{{ employee.phone }}</td>
+  <td>{{ employee.email }}</td>
+  <td>{{ employee.salary }}</td>
+  <td>
+    <a class="btn btn-outline-success" routerLink="/update/{{ employee.id }}"
+      >Update</a
+    >
+  </td>
+  <td>
+    <a class="btn btn-outline-danger" routerLink="/delete/{{ employee.id }}"
+      >Delete</a
+    >
+  </td>
+</tr>
