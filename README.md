@@ -22,3 +22,4 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 16. ✅ Node.js
 17. ✅ Angular
 18. ✅ React
+19. ✅ Vue
