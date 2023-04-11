@@ -1,0 +1,94 @@
+######### Get All Authors
+# { 
+# 	authors {
+#     id
+#     name
+#     age
+#     books {
+#       id
+#       name
+#     }
+#   }
+# }
+
+######### Get All Books
+# { 
+# 	books {
+#     id
+#     name
+#     author {
+#       name
+#       age
+#     }
+#    	numOfPages
+#   }
+# }
+
+######### Get one Author by ID
+# {
+#   author(id:"64349db2a89f25fb0938a84f"){
+#     name
+#     age
+#     books {
+#       name
+#     }
+#   }
+# }
+
+######### Get one Book by ID
+# {
+#   book(id:"64349beca89f25fb0938a846"){
+#     name
+#     author {
+#       name
+#       age
+#     }
+#     numOfPages
+#   }
+# }
+
+######### Add one Author
+# mutation {
+#   AddAuthor(name: "Ahmed Kaled Tawfiq",age: 55){
+#     name
+#   }
+# }
+
+######### Add one Book
+# mutation {
+#   AddBook(name: "Utopia",numOfPages: 55, author: "6434d07a810a5eec9ea5c2a0"){
+#     name
+#   }
+# }
+
+######### Update Author by ID
+# mutation {
+#   UpdateAuthor(id: "6434d07a810a5eec9ea5c2a0", books: ["6434d118810a5eec9ea5c2a2"]){
+#     name
+#     books {
+#       name
+#     }
+#   }
+# }
+
+######### Update book by ID
+# mutation {
+#   UpdateBook(id: "6434d118810a5eec9ea5c2a2", numOfPages: 500){
+#     name
+#     numOfPages
+#   }
+# }
+
+######### Delete Author by ID
+# mutation {
+#   DeleteAuthor(id: "6434c60f9fb3466dda86a5c6"){
+#     name
+#   }
+# }
+
+######### Delete Book by ID
+# mutation {
+#   DeleteBook (id: "6434d2fbd89dcca23a503120"){
+#     name
+#   }
+# }
