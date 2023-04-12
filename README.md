@@ -24,3 +24,4 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 18. ✅ React
 19. ✅ Vue
 20. ✅ GraphQL
+21. ✅ Unit Testing
