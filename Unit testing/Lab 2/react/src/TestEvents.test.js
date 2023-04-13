@@ -1,0 +1,16 @@
+/* eslint-disable testing-library/prefer-screen-queries */
+import TestEvents from "./TestEvents";
+import { fireEvent, render } from "@testing-library/react";
+
+describe("test TestEvents up", () => {
+  it("test button-up", () => {
+    const { getByTestId } = render(<TestEvents />);
+    fireEvent.click(getByTestId("button-up"));
+    expect(getByTestId("counter")).toHaveTextContent("1");
+  });
+  it("test button-down", () => {
+    const { getByTestId } = render(<TestEvents />);
+    fireEvent.click(getByTestId("button-down"));
+    expect(getByTestId("counter")).toHaveTextContent("-1");
+  });
+});
