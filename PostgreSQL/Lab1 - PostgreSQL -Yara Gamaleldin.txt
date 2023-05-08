@@ -1,0 +1,53 @@
+CREATE DATABASE lab1;
+
+\c lab1
+
+CREATE TABLE Students (std_id serial PRIMARY KEY, Name VARCHAR (50) N
+OT NULL, Email VARCHAR (50) NOT NULL, Address VARCHAR (100) NOT NULL);
+
+CREATE TABLE Tracks (track_id serial PRIMARY KEY, Name VARCHAR (50) N
+OT NULL);
+
+ALTER TABLE Students ADD COLUMN track_id INTEGER REFERENCES Tracks(tr
+ack_id);
+
+CREATE TABLE Courses (course_id serial PRIMARY KEY, Name VARCHAR (50) NOT NULL, Description VARCHAR (100) NOT NULL, Max_Score INTEGER NOT NULL);
+
+CREATE TABLE Exams (exam_id serial PRIMARY KEY, Exam_date DATE NOT NULL);
+
+CREATE TABLE Students_PhoneNum (student_Id INTEGER, phoneNum INTEGER UNIQUE, PRIMARY KEY(student_Id, phoneNum), FOREIGN KEY (student_Id) REFERENCES Students(std_id));
+
+CREATE TABLE Course_Track (track_Id INTEGER, course_Id INTEGER, PRIMARY KEY(student_Id, course_Id), FOREIGN KEY (track_Id) REFERENCES tracks (track_id), FOREIGN KEY (course_Id) REFERENCES courses (course_id));
+
+CREATE TABLE Student_Exam_Subject (student_Id INTEGER, course_Id INTEGER, exam_Id INTEGER, Exam_score INTEGER, PRIMARY KEY(student_Id, course_Id, exam_Id), FOREIGN KEY (student_Id) REFERENCES students(std_id), FOREIGN KEY (course_Id) REFERENCES courses (course_id), FOREIGN KEY (exam_Id) REFERENCES Exams (exam_id));
+
+
+----- Insert Data -----
+INSERT INTO Tracks (name) VALUES('UI');
+INSERT INTO Tracks (Name) VALUES('Mobile');
+INSERT INTO Tracks (Name) VALUES('SW'), ('PD'), ('Open Source');
+
+INSERT INTO Students (name, email, address, track_id) VALUES('Yara', 'yara@email.com', 'cairo', 1), ('Zara', 'zara@email.com', 'cairo', 2), ('Tar
+a', 'tara@email.com', 'cairo', 3), ('Lara', 'lara@email.com', 'cairo', 4), (
+'Sara', 'sara@email.com', 'cairo', 5);
+
+ INSERT INTO courses (name, description, max_score) VALUES('JS', 'good course', 90), ('TS', '5 days', 80), ('CSS', 'good course', 70), ('HTML', 'easy course', 100), ('React', 'good course', 90);
+
+INSERT INTO students_phoneNum (student_Id, phoneNum) VALUES(1, 05555555), (1, 0666665), (2, 05555), (3, 055777755), (4, 0578555);
+
+INSERT INTO course_track (course_Id, track_Id) VALUES(1, 2), (1, 3), (2, 4), (3, 3), (4, 5);
+
+ INSERT INTO exams (exam_date) VALUES ('2022-05-15'), ('2022-06-22'),
+('2022-07-10'), ('2022-08-05'), ('2022-09-01');
+
+INSERT INTO student_exam_subject (exam_Id, student_Id, course_Id, exa
+m_score) VALUES (1, 1, 1, 80), (1, 2, 1, 90), (2, 1, 2, 75), (2, 2, 2, 85),
+(3, 1, 3, 92);
+
+
+
+
+
+
+
+

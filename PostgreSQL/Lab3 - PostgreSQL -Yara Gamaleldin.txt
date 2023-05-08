@@ -1,0 +1,30 @@
+3- CREATE VIEW Student_view AS SELECT first_name, name FROM Students S JOIN Tracks T ON S.track_id = T.track_id;
+
+4- CREATE VIEW track_courses_view AS SELECT T.name AS track_name, C.name AS course_name FROM tracks T JOIN course_track CT ON T.track_id = CT.track_id JOIN courses C ON C.course_id = CT.course_id;
+
+5- CREATE VIEW student_subject_view AS SELECT first_name name FROM students S JOIN course_track CT ON S.track_id = CT.track_id JOIN courses C ON CT.course_id = C.course_id;
+
+6- CREATE VIEW student_score_view AS SELECT CONCAT(first_name, ' ', last_name) AS Full_name, exam_score, exam_date FROM students S JOIN student_exam_subject SES ON S.std_id = SES.student_id JOIN exams E ON E.exam_id = SES.exam_id;
+
+7-  CREATE TEMPORARY VIEW course_view AS SELECT name, max_score FROM courses;
+
+8- CREATE USER hamada WITH PASSWORD '123';
+   GRANT ALL PRIVILEGES ON DATABASE lab1 TO hamada;
+
+9- CREATE USER yara WITH PASSWORD '123' LOGIN;
+   ALTER USER yara SET pg_hba.conf = 'local all yara trust';
+   GRANT ALL PRIVILEGES ON DATABASE lab1 TO yara;
+
+10- SELECT to_char(exam_date,'DD-mon-yyyy') as date FROM student_score_view;
+
+11- SELECT first_name, age(birth_date) as birth_date FROM Students;
+
+12- SELECT full_name, round(exam_score) FROM student_score_view;
+
+13- SELECT first_name, to_char(birth_date, 'YYYY') as birth_year FROM Students;
+
+14- INSERT INTO exams (exam_date) VALUES(now());
+
+15- CREATE DATABASE ITI;
+    CREATE SCHEMA instructors_schema;
+    CREATE TABLE instructors_schema.instructors(id SERIAL PRIMARY KEY, name VARCHAR(50));

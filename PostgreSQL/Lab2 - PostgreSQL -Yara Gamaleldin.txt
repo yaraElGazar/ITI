@@ -1,0 +1,64 @@
+1- CREATE TYPE gender AS ENUM ('female', 'male');
+   ALTER TABLE Students ADD COLUMN gender gender;
+
+2- ALTER TABLE Students ADD COLUMN birth_date DATE;
+
+3- ALTER TABLE Students DROP COLUMN Name;
+   ALTER TABLE Students ADD COLUMN first_name VARCHAR(50), ADD COLUMN last_name VARCHAR(50);
+
+4- ALTER TABLE students DROP COLUMN address, DROP COLUMN Email;
+   CREATE TYPE contact_info AS (address VARCHAR(50), email VARCHAR(50));
+   ALTER TABLE Students ADD COLUMN contact_info contact_info;
+
+5- ALTER TABLE students ALTER std_id TYPE smallint;
+   ALTER TABLE courses ALTER course_id TYPE smallint;
+   ALTER TABLE exams ALTER exam_id TYPE smallint;
+   ALTER TABLE tracks ALTER track_id TYPE smallint;
+
+6- ALTER TABLE Students ADD COLUMN track_id INTEGER REFERENCES Tracks(track_id);
+   ALTER TABLE students_phoneNum ADD CONSTRAINT fk_students_phoneNum FOREIGN KEY (student_id)REFERENCES students (std_id);
+
+7- INSERT INTO Students (track_id, gender, birth_date, first_name, last_name, contact_info) VALUES  (6, 'male', '2002-05-15', 'Ali', 'Hossma', '({"address": "cairo", "email": "ali@email"})'),  (7, 'female
+', '1999-05-15', 'Salma', 'Ahmed', '({"address": "alex", "email": "slama@email"})'),  (8, 'female', '200
+2-05-15', 'Yara', 'Gamal', '({"address": "cairo", "email": "yara@email"})');
+
+8- SELECT * FROM Students;
+
+9- SELECT * FROM Students WHERE gender = 'male';
+
+10- SELECT COUNT (*) FROM Students WHERE gender='female';
+
+11- SELECT * FROM Students WHERE birth_date < '1992-10-01';
+
+12- SELECT * FROM Students WHERE birth_date < '1992-10-01' AND gender = 'male';
+
+13- SELECT * FROM courses ORDER BY max_score;
+
+14- SELECT * FROM courses WHERE max_score = (SELECT MAX (max_score) FROM courses);
+
+15- SELECT * FROM Students WHERE first_name LIKE 'A%';
+
+16- SELECT COUNT(*) FROM Students WHERE first_name = 'Mohammed';
+
+17- SELECT COUNT(*) FROM Students GROUP BY Gender;
+
+18- SELECT COUNT(*) FROM Students GROUP BY first_name HAVING COUNT(*) > 2;
+
+19- SELECT first_name, name FROM Students S JOIN Tracks T ON S.track_id = T.track_id;
+
+20- SELECT first_name, name, exam_score FROM students JOIN student_exam_subject SES ON std_id = student_id JOIN courses C ON C.course_Id = SES.course_id;
+
+
+
+---- lAB 3 ----
+
+1-  BEGIN TRANSACTION;
+    INSERT INTO student_exam_subject (student_id, exam_id, course_id, exam_score) VALUES (8, 2, 2, 5
+0);
+
+2-  BEGIN TRANSACTION;
+    INSERT INTO student_exam_subject (student_id, exam_id, course_id, exam_score) VALUES (9, 2, 2, 5
+0);
+    ROLLBACK;
+
+    
