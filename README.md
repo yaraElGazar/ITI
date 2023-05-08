@@ -26,3 +26,4 @@ This repo contains all the tasks done while studying Web and UI Develeopment in 
 20. ✅ GraphQL
 21. ✅ Unit Testing
 22. ✅ RWD-FW (Tailwind - MaterialUI)
+23. ✅ PostgreSQL
